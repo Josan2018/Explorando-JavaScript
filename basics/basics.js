@@ -216,7 +216,7 @@ parseInt(011); // => 9
 parseFloat(".1"); // => 0.1
 parseInt("0.1"); // => 0
 parseInt(".1") // => NaN
-parseFloat("$72.47"); // => NaN
+parseFloat("$72.47"); // => NaN\
 
 
 console.log('Expoente: ', Math.pow(2, 53));
