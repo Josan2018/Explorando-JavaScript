@@ -36,3 +36,4 @@ var nome = 'Jo'
 var msg = 'What\'s your name ?'
 var mgs1 = "What's your name bro ?"
 var msg2 = "Gostaria de te ver a sorrir 'velha burra'"
+
