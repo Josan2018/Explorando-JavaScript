@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 400px;
+            padding: 2px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+
+        table thead th {
+            padding: 10px;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        table tbody tr {
+            width: 250px;
+        }
+
+        table tbody tr td {
+            margin: 0;
+            padding: 0;
+        }
+
+        table tbody tr td input {
+            width: 100px;
+            margin: 0 4px;
+        }
+
+        td.text-right {
+            text-align: right;
+        }
+
+        #salario {
+            padding: 20px;
+            border: 1px solid red;
+            width: 200px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Salários</h1>
+    <div id="form">
+        <form action="">
+            <table>
+                <thead>
+                    <th colspan="2">Calculadora de salários em função da carga horária</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-right">
+                            <label for="horasId">Carga horária:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="horas" id="horasId">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">
+                            <label for="taxaId">Taxa:</label>
+                        </td>
+                        <td>
+                            <input type="number" name="taxa" id="taxaId">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button" onclick="salarios()">Calcular Salário </button>
+        </form>
+    </div>
+    <div id="salario"></div>
+    <div id="info"></div>
+    <script src="./salarios.js"></script>
+</body>
+
+</html>
